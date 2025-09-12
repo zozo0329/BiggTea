@@ -1,0 +1,16 @@
+.default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #683d04;
+  color: white;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .default {
+    justify-content: space-between;
+  }
+  .signUp {
+    display: none;
+  }
+}

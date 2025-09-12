@@ -5,7 +5,7 @@ const CartModal = () => {
     <div>
       <button
         className="btn bg-[#68420a] text-[white] h-[36px] active:bg-[#945f0e] hover:bg-[#8f5602] transition-all duration-300"
-        onClick={() => document.getElementById("my_modal_2").showModal()}
+        onClick={() => document.getElementById("navCart").showModal()}
       >
         <span>
           <img
@@ -16,8 +16,8 @@ const CartModal = () => {
         </span>
         <span>4</span>
       </button>
-      <dialog id="my_modal_2" className="modal">
-        <div className="modal-box">
+      <dialog id="navCart" className="modal">
+        <div className="modal-box text-black">
           <h3 className="font-bold text-lg">Hello!</h3>
           <p className="py-4">Press ESC key or click outside to close</p>
         </div>
