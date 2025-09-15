@@ -1,5 +1,6 @@
 import React from "react";
 import CartIcon from "../../../assets/Icons/CartIcon.png";
+import CartContent from "../../Cart/CartContent";
 const CartModal = () => {
   return (
     <div>
@@ -18,8 +19,7 @@ const CartModal = () => {
       </button>
       <dialog id="navCart" className="modal">
         <div className="modal-box text-black">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">Press ESC key or click outside to close</p>
+          <CartContent />
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>

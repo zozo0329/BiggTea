@@ -1,21 +1,43 @@
 import React from "react";
-
+import PugIcon from "../../../assets/Icons/PugLogo-removebg-preview.png";
+import FrapCard from "../../Main/DrinkItems/CardItems/FrapCard";
+import FrapFlavors from "../../Main/Flavors/FrapFlavors";
 const PrafModal = () => {
   return (
     <div>
       <button
-        className="cursor-pointer rounded-[10px] w-[300px] h-[300px] text-4xl bg-[url('https://media.istockphoto.com/photos/iced-coffee-mocha-on-wooden-working-space-background-and-blur-picture-id1328259165?b=1&k=20&m=1328259165&s=170667a&w=0&h=rGgUaSVqEhpvoiDDvsi1XWuj7M9qrnhA8vq86w_Y8sg=')] bg-cover bg-center hover:scale-[1.1] transition-all duration-400"
-        onClick={() => document.getElementById("praf").showModal()}
+        className=" cursor-pointer  rounded-[10px] w-[300px] h-[300px] text-4xl bg-[url('https://img.freepik.com/premium-photo/international-frappe-coffee-day_862994-45663.jpg')] bg-cover bg-center hover:scale-[1.1] transition-all duration-400"
+        onClick={() => document.getElementById("Praf").showModal()}
       >
-        <div className="text-white bg-[#00000065] p-3">Praf</div>
+        <div className="text-white bg-[#00000065] p-3">Frap</div>
       </button>
-      <dialog id="praf" className="modal">
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">Press ESC key or click outside to close</p>
+      <dialog id="Praf" className="modal">
+        <div className="modal-box flex flex-wrap items-center justify-center gap-10 bg-[#ffe2a4] max-w-2xl max-[600px]:max-w-sm">
+          <div className="flex flex-col gap-10 items-center">
+            <div className="flex items-center gap-3">
+              <img src={PugIcon} alt="Pug Logo" className="w-[80px]" />
+              <h1 className="text-[35px]  font-bold text-[#5e3d1e] font-sans cursor-default">
+                Big Tea
+              </h1>
+            </div>
+            <div className="flex flex-wrap justify-center gap-10">
+              {FrapFlavors.map((flavor) => {
+                return (
+                  <FrapCard
+                    key={flavor.id}
+                    name={flavor.name}
+                    description={flavor.description}
+                    medium={flavor.medium}
+                    large={flavor.large}
+                    image={flavor.image}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </div>
         <form method="dialog" className="modal-backdrop">
-          <button>close</button>
+          <button />
         </form>
       </dialog>
     </div>

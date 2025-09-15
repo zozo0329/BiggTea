@@ -1,5 +1,7 @@
 import React from "react";
-
+import MilkTeaCard from "../../Main/DrinkItems/CardItems/MilkTeaCard";
+import MilkteaFlavors from "../../Main/Flavors/MilkteaFlavors";
+import PugIcon from "../../../assets/Icons/PugLogo-removebg-preview.png";
 const MilkteaModal = () => {
   return (
     <div>
@@ -10,12 +12,30 @@ const MilkteaModal = () => {
         <div className="text-white bg-[#00000065] p-3">Milk Tea</div>
       </button>
       <dialog id="milktea" className="modal">
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">Press ESC key or click outside to close</p>
+        <div className="modal-box flex flex-wrap items-center justify-center gap-10 bg-[#ffe2a4] max-w-2xl max-[600px]:max-w-sm">
+          <div className="flex flex-col gap-10 items-center">
+            <div className="flex items-center gap-3">
+              <img src={PugIcon} alt="Pug Logo" className="w-[80px]" />
+              <h1 className="text-[35px]  font-bold text-[#5e3d1e] font-sans cursor-default">
+                Big Tea
+              </h1>
+            </div>
+            <div className="flex flex-wrap justify-center gap-10">
+              {MilkteaFlavors.map((flavor) => (
+                <MilkTeaCard
+                  key={flavor.id}
+                  name={flavor.name}
+                  description={flavor.description}
+                  image={flavor.image}
+                  medium={flavor.medium}
+                  large={flavor.large}
+                />
+              ))}
+            </div>
+          </div>
         </div>
         <form method="dialog" className="modal-backdrop">
-          <button>close</button>
+          <button />
         </form>
       </dialog>
     </div>

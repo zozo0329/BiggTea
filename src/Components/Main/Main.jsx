@@ -1,13 +1,13 @@
 import React from "react";
 import Carousel from "./Carousel/Carousel";
-import Milktea from "./Milktea/Milktea";
+import DrinkItems from "./DrinkItems/DrinkItems";
 
 const Main = () => {
   return (
     <div>
       <Carousel />
       <div>
-        <Milktea />
+        <DrinkItems />
       </div>
     </div>
   );

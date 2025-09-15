@@ -5,7 +5,7 @@ import IgIcon from "../../../assets/Icons/IgIcon.png";
 const Socials = () => {
   return (
     <div className="p-[35px] flex flex-col  gap-[20px] border-b-1 border-[#7E3E00]">
-      <div className="flex justify-between items-center ">
+      <div className="flex justify-between items-center">
         <div>
           <a>
             <img
