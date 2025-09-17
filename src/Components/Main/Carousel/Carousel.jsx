@@ -1,8 +1,7 @@
 import React from "react";
-import CaroStyle from "./carousel.module.css";
 const Carousel = () => {
   return (
-    <div className={CaroStyle.default}>
+    <div className="max-[600px]:hidden">
       <div className="bg-[#ffecb8] mt-[50px]">
         <div className="carousel w-full">
           <div id="slide1" className="carousel-item relative w-full">
