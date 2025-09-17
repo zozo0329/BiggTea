@@ -69,7 +69,7 @@ const MilkTeaFlavors = [
     medium: 170,
     large: 190,
     image:
-      "https://i.pinimg.com/originals/48/24/bb/4824bb4ab570a0773d693a875a1f3b98.jpg",
+      "https://s3-media0.fl.yelpcdn.com/bphoto/UTAcYJSroyUXh-wwLpq9vg/o.jpg",
     id: "M8",
   },
   {

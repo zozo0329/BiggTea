@@ -23,6 +23,7 @@ const FruitTeaModal = () => {
             <div className="flex flex-wrap justify-center gap-10">
               {FruitTeaFlavors.map((flavors) => (
                 <FruitTeaCard
+                  key={flavors.id}
                   id={flavors.id}
                   name={flavors.name}
                   description={flavors.description}

@@ -24,6 +24,7 @@ const IcedCoffeeModal = () => {
               {IcedCoffeeFlavors.map((flavors) => (
                 <IcedCoffeeCard
                   key={flavors.id}
+                  id={flavors.id}
                   name={flavors.name}
                   description={flavors.description}
                   medium={flavors.medium}

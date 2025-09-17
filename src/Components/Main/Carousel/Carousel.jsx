@@ -21,7 +21,7 @@ const Carousel = () => {
           </div>
           <div id="slide2" className="carousel-item relative w-full">
             <img
-              src="https://img.freepik.com/premium-photo/five-vibrant-bubble-tea-drinks-each-with-different-color-flavor-burst-with-refreshing-e_924727-67840.jpg"
+              src="https://www.pjponline.com/wp-content/uploads/2015/01/shutterstock_430178011-600x235.jpg"
               className="w-full h-[550px]"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -35,7 +35,7 @@ const Carousel = () => {
           </div>
           <div id="slide3" className="carousel-item relative w-full">
             <img
-              src="https://static.vecteezy.com/system/resources/thumbnails/035/942/175/small_2x/ai-generated-plastic-cups-of-different-tasty-bubble-tea-on-wooden-background-generative-ai-free-photo.jpg"
+              src="https://png.pngtree.com/thumb_back/fw800/background/20240522/pngtree-a-glass-of-iced-coffee-is-placed-on-the-fence-against-image_15673440.jpg"
               className="w-full h-[550px]"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -49,7 +49,7 @@ const Carousel = () => {
           </div>
           <div id="slide4" className="carousel-item relative w-full">
             <img
-              src="https://static.vecteezy.com/system/resources/previews/032/412/751/large_2x/plastic-cups-of-different-tasty-bubble-tea-on-wooden-background-generative-ai-free-photo.jpg"
+              src="https://www.stonehouserestaurants.co.uk/content/dam/stonehouse/images/2022/drinks/stonehouse-html-image-sodas.jpg.asset/1671529684788.jpg"
               className="w-full h-[550px]"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">

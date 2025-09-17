@@ -24,6 +24,7 @@ const MilkteaModal = () => {
               {MilkteaFlavors.map((flavor) => (
                 <MilkTeaCard
                   key={flavor.id}
+                  id={flavor.id}
                   name={flavor.name}
                   description={flavor.description}
                   image={flavor.image}

@@ -25,6 +25,7 @@ const PrafModal = () => {
                 return (
                   <FrapCard
                     key={flavor.id}
+                    id={flavor.id}
                     name={flavor.name}
                     description={flavor.description}
                     medium={flavor.medium}

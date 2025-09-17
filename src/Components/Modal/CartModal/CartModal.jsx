@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import CartIcon from "../../../assets/Icons/CartIcon.png";
 import CartContent from "../../Cart/CartContent";
+import CartContext from "../../Store/CartContext";
 const CartModal = () => {
+  const cartCTX = useContext(CartContext);
+  console.log(cartCTX, "CART CTX");
+
+  const cartNumber = cartCTX.items.reduce((currNumber, item) => {
+    console.log(item, "ITEMMMMMMMMMMM");
+    return currNumber + item.amount;
+  }, 0);
   return (
     <div>
       <button
@@ -15,10 +23,10 @@ const CartModal = () => {
             className="w-[30px] cursor-pointer"
           />
         </span>
-        <span>4</span>
+        <span>{cartNumber}</span>
       </button>
       <dialog id="navCart" className="modal">
-        <div className="modal-box text-black">
+        <div className="modal-box text-black max-w-[50%]  max-[600px]:max-w-[70%]">
           <CartContent />
         </div>
         <form method="dialog" className="modal-backdrop">
