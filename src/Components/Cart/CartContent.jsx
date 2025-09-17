@@ -17,7 +17,7 @@ const CartContent = () => {
       <div>
         {itemCTX.map((drinkItem) => (
           <CartItem
-            key={`${drinkItem.id} ${drinkItem.size}`}
+            key={`${drinkItem.id}${drinkItem.size}`}
             name={drinkItem.name}
             image={drinkItem.image}
             price={drinkItem.price}

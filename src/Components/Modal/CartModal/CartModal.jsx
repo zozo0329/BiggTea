@@ -4,12 +4,10 @@ import CartContent from "../../Cart/CartContent";
 import CartContext from "../../Store/CartContext";
 const CartModal = () => {
   const cartCTX = useContext(CartContext);
-  console.log(cartCTX, "CART CTX");
-
   const cartNumber = cartCTX.items.reduce((currNumber, item) => {
-    console.log(item, "ITEMMMMMMMMMMM");
     return currNumber + item.amount;
   }, 0);
+
   return (
     <div>
       <button
