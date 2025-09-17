@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-import CartContext from "../../../Store/CartContext";
-
-const IcedCoffeeCard = ({ name, description, medium, large, image, id }) => {
+import CartContext from "../../../Components/Store/CartContext";
+const FlavorCard = ({ name, description, medium, large, image, id }) => {
   const cartCTX = useContext(CartContext);
   const addItem = cartCTX.addItem;
   let amount = 1;
@@ -10,7 +9,6 @@ const IcedCoffeeCard = ({ name, description, medium, large, image, id }) => {
     addItem({ name, image, medium, id, price: medium, amount, size: "Medium" });
   };
   const largeHandler = () => {
-    +amount + 1;
     addItem({ name, image, large, id, price: large, amount, size: "Large" });
   };
   return (
@@ -25,7 +23,6 @@ const IcedCoffeeCard = ({ name, description, medium, large, image, id }) => {
           Medium: {medium} <br />
           Large: {large}
         </p>
-
         <div className="card-actions justify-between items-center mt-[50px]">
           <div>
             <p className="text-[17px] font-[500] text-[#63361d]">Sizes:</p>
@@ -50,4 +47,4 @@ const IcedCoffeeCard = ({ name, description, medium, large, image, id }) => {
   );
 };
 
-export default IcedCoffeeCard;
+export default FlavorCard;

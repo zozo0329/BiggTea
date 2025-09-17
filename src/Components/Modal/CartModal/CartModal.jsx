@@ -8,18 +8,24 @@ const CartModal = () => {
     return currNumber + item.amount;
   }, 0);
 
+  let idName = "navCart";
+  if (cartNumber === 0) {
+    idName = "test";
+  } else {
+    idName = "navCart";
+  }
   return (
     <div>
       <button
-        className="btn bg-[#68420a] text-[white] h-[36px] active:bg-[#945f0e] hover:bg-[#8f5602] transition-all duration-300"
-        onClick={() => document.getElementById("navCart").showModal()}
+        className={`btn bg-[#68420a] text-[white] h-[36px] active:bg-[#945f0e] hover:bg-[#8f5602] transition-all duration-300 ${
+          cartNumber === 0
+            ? "cursor-not-allowed hover:bg-[#68420a] active:bg-[#68420a]"
+            : "cursor-pointer"
+        }`}
+        onClick={() => document.getElementById(idName).showModal()}
       >
         <span>
-          <img
-            src={CartIcon}
-            alt="CartIcon"
-            className="w-[30px] cursor-pointer"
-          />
+          <img src={CartIcon} alt="CartIcon" className="w-[30px]" />
         </span>
         <span>{cartNumber}</span>
       </button>
